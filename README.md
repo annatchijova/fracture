@@ -2,10 +2,10 @@
 
 [English](./README.md) · [Español](./README_ES.md) · [Technical README](./docs/VIGIA_TECHNICAL_STATE_EN.md) · Author: Anna Tchijova · License: Apache 2.0
 
-**Index:** [What VIGÍA does](#from-ioc-to-ioi) · [Quick start](#quick-start) · [Accuracy and evaluation](#accuracy-and-evaluation) · [Documentation](#documentation) · [Related DFIR projects](#related-dfir-projects)
+**Index:** [What FRACTURE does](#from-ioc-to-ioi) · [Quick start](#quick-start) · [Accuracy and evaluation](#accuracy-and-evaluation) · [Documentation](#documentation) · [Related DFIR projects](#related-dfir-projects)
 
 > *"Making deception computationally expensive for the attacker."*
-> Today, lying in a log or faking an attack is free. VIGÍA charges that price
+> Today, lying in a log or faking an attack is free. FRACTURE charges that price
 > by quantifying the logical fractures in the lie.
 
 **FRACTURE is not a detector. It is a deterministic inference engine that quantifies
@@ -18,9 +18,9 @@ it is not forensics — it is divination.
 ## From IoC to IoI
 
 Current DFIR systems — EDR, SIEM, SOAR — answer **"What happened?"**
-VIGÍA answers **"Why did it happen, and who benefits from that interpretation?"**
+FRACTURE answers **"Why did it happen, and who benefits from that interpretation?"**
 
-| Traditional DFIR | VIGÍA |
+| Traditional DFIR | FRACTURE |
 |------------------|-------|
 | IoC (Indicator of Compromise) | IoI (Indicator of Intent) |
 | Opaque ML with "87% confidence" | Exact `Fraction` arithmetic with `audit_hash` |
@@ -41,7 +41,7 @@ manipulation patterns, and Grice maxim violations.
 | **Tests** | 46,931 further lines; 2,066 test functions in 255 files |
 | **JSON and Markdown** (cases, evidence, sealed bundles, documentation) | more than **540,000 lines** |
 | **Total under version control** | more than **713,000 lines** of text |
-| **Sealed forensic bundles** | 617, verifiable without VIGÍA's code |
+| **Sealed forensic bundles** | 617, verifiable without FRACTURE's code |
 | **Academic documentation** | **193 modules in 4 languages** (EN / ES / RU / ZH) |
 
 The code has gone through 11 in-house red-team rounds and external audits. Each
@@ -72,7 +72,7 @@ export VIGIA_EVIDENCE_DIR="/path/to/read-only/evidence"   # required
 python3 vigia_agent.py --evidence data/cases/converted/VIGIA-REAL-VANKO.json \
   --case-id VIGIA-REAL-VANKO --output results/vanko_bundle.json
 
-# Verify a sealed bundle independently (stdlib only, no VIGÍA code required)
+# Verify a sealed bundle independently (stdlib only, no FRACTURE code required)
 python3 forensics/verify_ebs_v1.py results/srl2018/VIGIA-REAL-SRL-DMZ-FTP_bundle.json --verbose
 ```
 
@@ -83,7 +83,7 @@ Mode 1 launcher) is available with `./launch_vigia_ui.sh` →
 Exit codes: `0` = no evil, `1` = MALICE, `2` = error, `3` = intent/suspicion.
 Full setup: [`INSTALL.md`](./INSTALL.md) ([ES](./INSTALL_ES.md)) ·
 Command reference: [`vigia_commands_en.html`](https://annatchijova.github.io/vigia/vigia_commands_en.html) ·
-VIGÍA (math model): [`vigia.html`](https://annatchijova.github.io/vigia/vigia.html) ·
+FRACTURE (math model): [`vigia.html`](https://annatchijova.github.io/vigia/vigia.html) ·
 Simulator: [`simulator.html`](https://annatchijova.github.io/vigia/simulator.html).
 
 ---
@@ -147,7 +147,7 @@ for the worked example of the gate rejecting an LLM candidate verdict.
 - **Claude Code / MCP (Domain A), LLM-assisted investigation, same
   deterministic seal** — evaluated per case on real raw evidence, not a
   corpus-wide figure. **100% correct verdicts on every investigation run to
-  date** across VIGÍA's own cases, real public forensic evidence, and the
+  date** across FRACTURE's own cases, real public forensic evidence, and the
   adversarial BREAK suite — a record over cases actually run, not a claim that
   it holds for any future case. The gap with Domain B's 97.5% has a concrete
   cause, not a vague "the LLM is smarter": Claude can read a field like a
@@ -171,7 +171,7 @@ python3 run_all_agent.py --timeout 90  # full corpus, label-blind
 ## Documentation
 
 Reference documentation lives in the
-[VIGÍA academic documentation index](./docs/academic/ACADEMIC_DOCS_MASTER_INDEX_EN.md):
+[FRACTURE academic documentation index](./docs/academic/ACADEMIC_DOCS_MASTER_INDEX_EN.md):
 193 modules documented in 4 languages (EN / ES / RU / ZH), with indexes in
 [Spanish](./docs/academic/ACADEMIC_DOCS_MASTER_INDEX.md),
 [Russian](./docs/academic/ACADEMIC_DOCS_MASTER_INDEX_RU.md) and
@@ -217,7 +217,7 @@ vigia-repo/
 **Architecture & technical state**
 - [`docs/VIGIA_TECHNICAL_STATE_EN.md`](./docs/VIGIA_TECHNICAL_STATE_EN.md) · [ES](./docs/VIGIA_ESTADO_TECNICO_ES.md) — full system state
 - [`docs/diagrama_pipeline.md`](./docs/diagrama_pipeline.md) — pipeline diagram
-- [Architecture diagrams](https://annatchijova.github.io/vigia/vigia_diagrams.html) · [VIGÍA (math model)](https://annatchijova.github.io/vigia/vigia.html) · [Simulator](https://annatchijova.github.io/vigia/simulator.html) · [Demo video](https://www.youtube.com/watch?v=NOquYzUwMkg)
+- [Architecture diagrams](https://annatchijova.github.io/vigia/vigia_diagrams.html) · [FRACTURE (math model)](https://annatchijova.github.io/vigia/vigia.html) · [Simulator](https://annatchijova.github.io/vigia/simulator.html) · [Demo video](https://www.youtube.com/watch?v=NOquYzUwMkg)
 
 **Development & project**
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) · [`CONTRIBUYENDO.md`](./CONTRIBUYENDO.md) — contribution guide
@@ -241,7 +241,7 @@ blue-team repositories under construction.
 
 ## Theoretical Foundation
 
-VIGÍA rests on Charles S. Peirce's abductive semiotics (Firstness / Secondness /
+FRACTURE rests on Charles S. Peirce's abductive semiotics (Firstness / Secondness /
 Thirdness), H. Paul Grice's cooperative principle, Dale Carnegie's manipulation
 taxonomy, and Umberto Eco's theory of significant silence and overinterpretation.
 
@@ -250,7 +250,7 @@ taxonomy, and Umberto Eco's theory of significant silence and overinterpretation
 ## License
 
 Apache 2.0 — see [`LICENSE`](./LICENSE).
-Copyright (c) 2026 Anna Tchijova and the VIGÍA AI Collective.
+Copyright (c) 2026 Anna Tchijova and the FRACTURE AI Collective.
 
 *"The question is not what happened, but why did someone make it happen —
-and who benefits from that interpretation?"* — VIGÍA
+and who benefits from that interpretation?"* — FRACTURE
