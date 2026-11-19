@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# VIGÍA — Forensic Intentionality Analysis System
+# FRACTURE — Forensic Intentionality Analysis System
 # Dockerfile — Multi-stage build with security hardening
 #
 # Security properties:
@@ -14,7 +14,7 @@
 #   exacto que produjo un ForensicBundle dado.
 #
 # Build:
-#   docker build -t vigia-forensic .
+#   docker build -t fracture-forensic .
 # Run (via docker compose — preferido):
 #   EVIDENCE_PATH=/path/to/evidence docker compose up
 # ─────────────────────────────────────────────────────────────────────────────
@@ -38,10 +38,10 @@ RUN pip install --no-cache-dir --prefix=/install -r requirements.txt \
 # ── Stage 2: Final image ──────────────────────────────────────────────────────
 FROM python:3.11-slim
 
-LABEL org.opencontainers.image.title="VIGÍA Forensic Analysis"
+LABEL org.opencontainers.image.title="FRACTURE Forensic Analysis"
 LABEL org.opencontainers.image.description="Deterministic forensic intentionality analysis — SANS FIND EVIL 2026"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
-LABEL org.opencontainers.image.source="https://github.com/annatchijova/vigia-intent-analysis"
+LABEL org.opencontainers.image.source="https://github.com/annatchijova/fracture"
 LABEL org.opencontainers.image.authors="Anna Tchijova"
 
 # Runtime system dependencies only

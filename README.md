@@ -1,4 +1,4 @@
-# VIGÍA — Intentionality Analysis Bridge for the SIFT Workstation
+# FRACTURE — Intentionality Analysis Bridge for the SIFT Workstation
 
 [English](./README.md) · [Español](./README_ES.md) · [Technical README](./docs/VIGIA_TECHNICAL_STATE_EN.md) · Author: Anna Tchijova · License: Apache 2.0
 
@@ -8,7 +8,7 @@
 > Today, lying in a log or faking an attack is free. VIGÍA charges that price
 > by quantifying the logical fractures in the lie.
 
-**VIGÍA is not a detector. It is a deterministic inference engine that quantifies
+**FRACTURE is not a detector. It is a deterministic inference engine that quantifies
 the fracture between what the evidence says and what the evidence should say.**
 If a system claims MALICE without being able to explain why with exact mathematics,
 it is not forensics — it is divination.

@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# VIGÍA — Docker Build & Publish to GitHub Container Registry (ghcr.io)
+# FRACTURE — Docker Build & Publish to GitHub Container Registry (ghcr.io)
 #
 # Genera el package digest sha256 visible en GitHub → igual que calebevans/mulder.
 #
@@ -13,7 +13,7 @@
 #   * Push de tag v* → publica :v1.2.3 + :latest
 #   * workflow_dispatch → build manual desde GitHub UI
 # ─────────────────────────────────────────────────────────────────────────────
-name: VIGÍA Docker Publish
+name: FRACTURE Container Package
 
 on:
   push:
@@ -66,7 +66,7 @@ jobs:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
           labels: |
-            org.opencontainers.image.title=VIGÍA Forensic Analysis
+            org.opencontainers.image.title=FRACTURE Forensic Analysis
             org.opencontainers.image.description=Deterministic forensic intentionality analysis — SANS FIND EVIL 2026
             org.opencontainers.image.licenses=Apache-2.0
             org.opencontainers.image.vendor=Anna Tchijova

@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vigia-forensic"
+name = "fracture-forensic"
 version = "2.0.0"
-description = "VIGÍA Forensic Suite — Intentionality Analysis for DFIR (SANS FIND EVIL 2026)"
+description = "FRACTURE Forensic Suite — Intentionality Analysis for DFIR"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
@@ -78,11 +78,11 @@ dev = [
 ]
 
 [project.scripts]
-vigia = "vigia.cli:main"
+fracture = "vigia.cli:main"
 
 [project.urls]
-Repository = "https://github.com/annatchijova/vigia-intent-analysis"
-"Bug Tracker" = "https://github.com/annatchijova/vigia-intent-analysis/issues"
+Repository = "https://github.com/annatchijova/fracture"
+"Bug Tracker" = "https://github.com/annatchijova/fracture/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
