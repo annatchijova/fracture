@@ -1,5 +1,7 @@
 # VIGÍA — Motor de Análisis de Intencionalidad para SIFT Workstation
 
+**FRACTURE** (ex `vigia-intent-analysis`).
+
 [English](./README.md) · [Español](./README_ES.md) · [README técnico](./docs/VIGIA_ESTADO_TECNICO_ES.md) · [Technical README (EN)](./docs/VIGIA_TECHNICAL_STATE_EN.md) · Autora: Anna Tchijova · Licencia: Apache 2.0
 
 **Índice:** [Qué hace VIGÍA](#de-ioc-a-ioi) · [Inicio rápido](#inicio-rápido) · [Precisión y evaluación](#precisión-y-evaluación) · [Documentación](#documentación) · [Otros proyectos DFIR](#otros-proyectos-dfir)

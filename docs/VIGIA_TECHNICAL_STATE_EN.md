@@ -5,7 +5,7 @@
 
 **Principal Investigator:** Anna Tchijova  
 **Audit Collective:** Claude (Anthropic), Kimi (Moonshot), Gemini (Google), DeepSeek, Qwen, ChatGPT (adversarial red team)  
-**Repository:** `github.com/annatchijova/vigia-intent-analysis`  
+**Repository:** [FRACTURE](https://github.com/annatchijova/fracture) (ex `vigia-intent-analysis`)\
 **Document Version:** 1.0 — May 18, 2026  
 **Classification:** Technical-forensic — Audience: independent auditors and reviewers
 

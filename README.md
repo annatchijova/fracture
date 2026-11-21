@@ -1,5 +1,7 @@
 # FRACTURE — Intentionality Analysis Bridge for the SIFT Workstation
 
+**FRACTURE** (ex `vigia-intent-analysis`).
+
 [English](./README.md) · [Español](./README_ES.md) · [Technical README](./docs/VIGIA_TECHNICAL_STATE_EN.md) · Author: Anna Tchijova · License: Apache 2.0
 
 **Index:** [What FRACTURE does](#from-ioc-to-ioi) · [Quick start](#quick-start) · [Accuracy and evaluation](#accuracy-and-evaluation) · [Documentation](#documentation) · [Related DFIR projects](#related-dfir-projects)
